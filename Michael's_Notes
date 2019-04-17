@@ -1,0 +1,119 @@
+// let completedHomework = () => {
+//     return ["Julian", "Aj", "Matt"];
+//     }
+//     let [x, y, z] = completedHomework();
+//     console.log(x, y, z);
+
+
+// Also works with objects
+// let instructor = {
+//     name: "Jimmy",
+//     email: "no@no.com"
+// }
+// let  {name: x, email: y} = instructor;
+//     console.log(x);
+
+//     let pizza = {
+//         topping1: "extra cheese",
+//         topping2: "pepperoni"
+//     }
+
+//     function pizza1({topping1}) {
+//         console.log(pizza);
+//     }
+// pizza1(pizza);
+
+// let car = {
+//     make: "Honda"
+// }
+// function something({make, year = 2001}) {
+//     console.log(make, year);
+// }
+// something(car);
+
+
+//constructoring function example.
+// function Person (name, job) { 
+//     this.name = name;
+//     this.job = job;
+//     }
+
+// Person.prototype.getName = function getName() {
+//     return this.name;
+// }
+
+// var goodGuy = new Person ("Aang", "Avatar");
+// console.log(goodGuy.getName())
+
+// class Person {
+//     constructor (name, job) {
+//         this.name = name;
+//         this.job = job;
+//     }
+//     getName() {
+//         return this.name;
+//     }
+//     getJob() {
+//         return this.job;
+//     }
+// }
+// let goodGuy = new Person('Neo', 'the one');
+// console.log(goodGuy);
+
+
+
+
+
+// class Person {
+//     constructor (name, job) {
+//         this.name = name;
+//         this.job = job;
+//     }
+//     getName() {
+//         return this.name;
+//     }
+//     getJob() {
+//         return this.job;
+//     }
+// }
+
+// class SuperHero extends Person {
+//     constructor (name, heroName, superPower) {
+//         super(name);
+//         this.heroName = heroName;
+//         this.superPower = superPower;
+//     }
+//     secretIdentity() {
+//         return `${this.heroName} is ${this.name}!!`
+//     }
+// }
+// let batman = new SuperHero("Bruce Wayne", "im Batman")
+//     console.log(batman.secretIdentity());
+
+// class Person {
+//     constructor (name) {
+//         this.name = name;
+//     }
+//     set name(name) {
+//         this._name = name;
+//     }
+//     get name() {
+//         return this._name
+//     }
+// }
+
+// let goodGuy = new Person('Jim Gordon');
+//     console.log(goodGuy.name);
+// goodGuy.name = "James Gordon";
+// console.log(goodGuy.name);
+
+let student = {name: "A-aron"};
+let status = new Map ();
+
+status.set(student.name, "A-aron");
+status.set("feeling", "churlish");
+console.log(status.get(student.name));
+console.log(status.get("feeling"));
+
+
+
